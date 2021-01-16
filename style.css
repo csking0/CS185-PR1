@@ -67,6 +67,23 @@ li a:hover {
     grid-row-end: 4;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.flex-element {
+    flex: 1;
+    border: 0px solid black;
+}
+
+.flex-element:first-child {
+    margin-right: 20px;
+}
+
+.flex-element:last-child {
+    margin-left: 20px;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
