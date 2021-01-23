@@ -1,0 +1,1 @@
+https://css-tricks.com/how-i-put-the-scroll-percentage-in-the-browser-title-bar/
