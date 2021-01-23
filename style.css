@@ -1,3 +1,5 @@
+/* text.html */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -22,67 +24,71 @@ li a:hover {
     background-color: rgb(80, 82, 158);
 }
 
-.gallery {
-    display: grid;
-}
+/* images.html */
 
-.gallery__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery_element_0 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-  
-.gallery_element_1 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.gallery_element_2 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
-
-.gallery_element_3 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 6;
-}
-
-.gallery_element_4 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.flex-container {
+.img_grid {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.flex-element {
-    flex: 1;
-    border: 0px solid black;
+.img_grid_column {
+    width: 24.5%;
+    height: auto;
 }
 
-.flex-element:first-child {
-    margin-right: 20px;
+.img_grid_column img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.flex-element:last-child {
-    margin-left: 20px;
+@media screen and (max-width: 1000px) {
+    .img_grid_column {
+        width: 49%
+    }
+ }
+
+@media screen and (max-width: 600px) {
+    .img_grid_column {
+        width: 100%
+    }   
 }
+
+/* videos.html */
+
+.video_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video_grid_column {
+    width: 33%;
+}
+
+.video_grid_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .video_grid_column {
+        width: 49%
+    }
+ }
+
+@media screen and (max-width: 600px) {
+    .video_grid_column {
+        width: 100%
+    }   
+}
+
+/* table.html */
 
 table, th, td {
     border: 1px solid black;
