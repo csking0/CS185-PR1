@@ -1,6 +1,6 @@
-/* text.html */
+/* all pages */
 
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,11 +8,11 @@ ul {
     background-color: dimgray;
 }
 
-li {
+#navbar li {
     float: left;
 }
 
-li a {
+#navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -20,7 +20,11 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+#navbar li a:hover {
+    background-color: rgb(80, 82, 158);
+}
+
+#navbar ul li a.active_page {
     background-color: rgb(80, 82, 158);
 }
 
