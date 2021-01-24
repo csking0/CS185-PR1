@@ -172,3 +172,8 @@ table, th, td {
 table {
     width: 100%
 }
+
+/* email.html */
+#valid_email, #invalid_email {
+    display: none;
+}

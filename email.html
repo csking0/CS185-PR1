@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>Email Verification</title>
+    <div id="navbar">
+        <ul>
+            <li><a href="text.html">Introduction</a></li>
+            <li><a href="images.html">Pictures</a></li>
+            <li><a href="videos.html">Sound Tests</a></li>
+            <li><a href="table.html">Parts List</a></li>
+            <li><a href="email.html" class="active_page">Email Verification</a></li>
+        </ul>
+    </div>
+</head>
+        
+<body>
+
+<h1>Email Verification</h1>
+
+<form name="email_form">
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit" onclick="validateEmail(document.email_form.email); return false;">
+</form>
+
+<h3 id="valid_email">Email successfully recorded.</h3>
+<h3 id="invalid_email">Invalid email address.</h3>
+
+<button onclick="goToTop()" id="top_button" title="To Top">Top</button>
+<script src="scripts.js"></script>
+
+</body>
+</html>

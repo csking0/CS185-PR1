@@ -80,8 +80,19 @@ window.onclick = function(event) {
     }
 };
 
-// Array.from(document.querySelectorAll(".video_thumbnail")).forEach(item => {
-//     item.addEventListener("click", event => {
-//         videoModal0.style.display = "block";
-//     })
-// });
+// email validation script
+function validateEmail(input) {
+    var validFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (input.value.match(validFormat)) {
+        if (invalid_email.style.display == "block") {
+            invalid_email.style.display = "none";
+        }
+        valid_email.style.display = "block";
+    }
+    else {
+        if (valid_email.style.display == "block") {
+            valid_email.style.display = "none";
+        }
+        invalid_email.style.display = "block";
+    }
+}
