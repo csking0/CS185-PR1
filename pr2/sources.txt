@@ -1,1 +1,4 @@
 https://css-tricks.com/how-i-put-the-scroll-percentage-in-the-browser-title-bar/
+https://www.tutorialspoint.com/how-to-create-a-modal-image-gallery-with-css-and-javascript
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_close
+https://stackoverflow.com/questions/40435286/how-to-vertically-center-modal/40435300
