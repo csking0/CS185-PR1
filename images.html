@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Progress Pics</title>
-</head>
-  
-<body>
-
 <link rel="stylesheet" href="style.css">
 
-<ul>
-    <li><a href="text.html">Introduction</a></li>
-    <li><a href="images.html">Progress Pics</a></li>
-    <li><a href="videos.html">Sound Tests</a></li>
-    <li><a href="table.html">Parts List</a></li>
-</ul>
+<head>
+    <title>Pictures</title>
+    <div id="navbar">
+        <ul>
+            <li><a href="text.html">Introduction</a></li>
+            <li><a href="images.html" class="active_page">Pictures</a></li>
+            <li><a href="videos.html">Sound Tests</a></li>
+            <li><a href="table.html">Parts List</a></li>
+            <li><a href="email.html">Email Verification</a></li>
+        </ul>
+    </div>
+</head>
 
-<h1>My Personal Keyboard Build Process</h1>
+<body>
 
-<div class="gallery">
-    <figure class="gallery_element_0">
-      <img src="pics/image0.jpg" class="gallery__img">
-    </figure>
-    <figure class="gallery_element_1">
-      <img src="pics/image1.jpg" class="gallery__img">
-    </figure>
-    <figure class="gallery_element_2">
-      <img src="pics/image2.jpg" class="gallery__img">
-    </figure>
-    <figure class="gallery_element_3">
-      <img src="pics/image3.jpg" class="gallery__img">
-    </figure>
-    <figure class="gallery_element_4">
-      <img src="pics/image4.jpg" class="gallery__img">
-    </figure>
+<div class="img_grid">
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/nemui.jpg">
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/kyuu.jpg">
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/cyberboard.jpeg"/>
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/candybar.jpg"/>
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/image4.jpg"/>
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/image1.jpg"/>
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/image2.jpg"/>
+    </div>
+    <div class="img_grid_column">
+        <img class="img_thumbnail" src="pics/image3.jpg"/>
+    </div>
 </div>
+
+<div class="modal">
+    <img class="modal_image" id="img01">
+</div>
+
+<button onclick="goToTop()" id="top_button" title="To Top">Top</button>
+<script src="scripts.js"></script>
 
 </body>
 </html>

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="stylesheet" href="style.css">
+
 <head>
     <title>Parts List</title>
+    <div id="navbar">
+        <ul>
+            <li><a href="text.html">Introduction</a></li>
+            <li><a href="images.html">Pictures</a></li>
+            <li><a href="videos.html">Sound Tests</a></li>
+            <li><a href="table.html" class="active_page">Parts List</a></li>
+            <li><a href="email.html">Email Verification</a></li>
+        </ul>
+    </div>
 </head>
         
 <body>
-
-<link rel="stylesheet" href="style.css">
-
-<ul>
-    <li><a href="text.html">Introduction</a></li>
-    <li><a href="images.html">Progress Pics</a></li>
-    <li><a href="videos.html">Sound Tests</a></li>
-    <li><a href="table.html">Parts List</a></li>
-</ul>
 
 <h1>List of Parts:</h1>
 
@@ -74,6 +76,9 @@
         <td><a target="_blank" href="https://thekey.company">The Key Dot Co</a></td>
     </tr>
 </table>
+
+<button onclick="goToTop()" id="top_button" title="To Top">Top</button>
+<script src="scripts.js"></script>
 
 </body>
 </html>
